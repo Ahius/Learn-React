@@ -1,21 +1,3 @@
-// import React, { Component, component } from 'react'
-// export default class Navigations extends Component {
-//     render(){
-//         return (
-//             <div className='menu'>
-//                 <nav>
-//                     <ul>
-//                     <li><a className='active' href='#home'>Home</a></li>
-//                     <li><a href='#news'>News</a></li>
-//                     <li><a href='#about'>About</a></li>
-//                     <li><a href='#contact'>Contact</a></li>
-//                     </ul>
-//                 </nav>
-//             </div>
-//         )
-//     }
-// }
-
 import React from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from './ThemeContext'
@@ -25,10 +7,10 @@ export default function Navigation() {
         <div className='menu'>
             <nav style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
                 <ul>
-                    <li><a className='active' href='#home'>Home</a></li>
-                    <li><a href='#news'>News</a></li>
+                    <li><a className='active' href='/'>Home</a></li>
+                    <li><a href='#News'>News</a></li>
                     <li><a href='#about'>About</a></li>
-                    <li><a href='#contact'>Contact</a></li>
+                    <li><a href='#Contact'>Contact</a></li>
                 </ul>
                 <div style={{ position: 'relative' }}>
                     <a className='switch-mode' href='#' onClick={toggle}

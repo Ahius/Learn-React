@@ -1,42 +1,22 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import './App.css';
 import Navigation from './components/Navigation';
-// import Main from './components/Main';
-// import Players from './components/Players'
+import { Routes, Route } from "react-router-dom";
 import Footer from './components/Footer';
-import PlayerList from './components/Players';
-// import { Players } from './shared/ListOfPlayers';
+import  Detail  from './components/Detail';
+import {Contact} from './components/Contact';
+import PlayerList  from './components/Players';
+
 function App() {
     return (
         <div className='App'>
-            <Navigation/>
-         <PlayerList/>
-          <Footer/>
+            <Navigation />
+            <Routes>
+                <Route path='/' element={<PlayerList />}></Route>
+                <Route path='/detail/:id' element={<Detail />}></Route>
+                <Route path='/contact' element={<Contact />}></Route>
+            </Routes>
+        
+            <Footer />
         </div>
     );
 }
