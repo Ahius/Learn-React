@@ -242,4 +242,11 @@ button{
 }
 
 /* ------------------------------------------Show Details Card */
+.product-tumb img {
+  width: 650px;
+  height: 450px;
+}
 
+.product-tumb{
+  text-align: center;
+}

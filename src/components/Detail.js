@@ -14,7 +14,7 @@ export default function Detail() {
             <div className='product-card'>
                 <div className='badge'>{player.name}</div>
                 <div className='product-tumb'>
-                    <img src={`../${player.img}`} alt='' />
+                    <img src={`../${player.img}`} alt='' className='DetailStyle' />
                 </div>
                 <div className='product-details'>
                     <h4>{player.club}</h4>

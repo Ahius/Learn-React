@@ -17,10 +17,11 @@ export default function PlayerList() {
             <p className='title'>{player.club}</p>
             <p><button onClick={() => { setPlayer(player) }}>
               {/* <a href='#popup1' id='openPopUp'>Detail</a> */}
-              <Link to={`detail/${player.id}`}>
+             
+            </button></p>
+            <Link to={`detail/${player.id}`}>
                 <p><button>Detail</button></p>
               </Link>
-            </button></p>
 
           </div>
         </div>

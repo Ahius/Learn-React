@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './components/ThemeContext';
 import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+import M from 'materialize-css'
+import 'materialize-css/dist/css/materialize.min.css'
 root.render(
   <React.StrictMode>
     <ThemeProvider>
